@@ -155,3 +155,8 @@ footer {
     padding: 20px;
     background-color: #222;
 }
+
+@media only screen and (max-width: 600px) {
+    /* CSS styles for mobile devices */
+}
+
