@@ -1,0 +1,238 @@
+.sticky-header {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 125%;
+    padding: 1px;
+    margin-bottom: 110px;
+}
+
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo styles */
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    margin-right: 720px; /* Add spacing between the logo and navigation links */
+    line-height: 1000%;
+    padding: -110px;
+    margin-top: -80px;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('03.jpg'); /* Add background image covering the whole body */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif; /* Set default font */
+}
+
+/* Header and footer styles */
+header,
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: -200px;
+}
+
+/* Header styles */
+header {
+    background-image: url('05.jpg'); /* Add background image to the navbar */
+    justify-content: space-between;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: -10px 0;
+    text-align: center;
+}
+
+/* Logo styles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 3px;
+    margin-top: 4px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    justify-content: flex-start;
+}
+
+h2
+{
+    line-height: 180%;
+}
+
+h4
+{
+    padding-right: 530px;
+    line-height: 180%;
+    text-align: right ;
+}
+
+/* Navigation styles */
+nav {
+
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    gap: 10px;
+    margin-top: 10px;   
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a transparent background to the buttons */
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+}
+
+.container {
+    padding: 20px;
+    color: white; /* Set default text color for the container */
+}
+
+/* Navigation button styles */
+button {
+    background-color: #333; /* Original color */
+    align-content: center;
+    padding-right: 100px;
+    justify-content: space-between;
+    color: #fff;
+    padding: 8px 12px; /* Decreased padding */
+    font-size: 1rem; /* Decreased font size */
+    border: none;
+    border-radius: 2px; /* Decreased border radius */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #555; /* Color on hover */
+    transform: translateY(-2px);
+}
+
+/* Main container styles */
+.container {
+    max-width: 12000px;
+    margin: 0 auto;
+    padding: 140px;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 60px;
+}
+
+/* Section heading styles */
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+//* Featured Artworks Section styles */
+.featured-artworks .artwork {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.featured-artworks .artwork img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 10px solid #ffcc00;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.featured-artworks .artwork img:hover {
+    transform: scale(1.1);
+}
+
+/* New Arrivals and Wall Art Services Section styles */
+.new-arrivals .artwork,
+.wall-services .artwork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.new-arrivals .artwork img,
+.wall-services .artwork img {
+    width: calc(33.33% - 40px);
+    height: auto;
+    object-fit: cover;
+    border: 10px solid #ffcc00;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.new-arrivals .artwork img:hover,
+.wall-services .artwork img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Testimonial styles */
+.testimonial {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Call-to-action button styles */
+.my-cta {
+    background-color: #ff9900; /* Original color */
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+.my-cta:hover {
+    background-color: #ffcc00; /* Color on hover */
+    transform: scale(1.05);
+}

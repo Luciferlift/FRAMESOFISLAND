@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FramesOfIsland - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2rem;
+        }
+
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-info i {
+            font-size: 28px;
+            margin-right: 10px;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #ffcc00;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #f0b90b;
+        }
+
+        /* Updated styles for social icons */
+        .social-icons-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons-container h3 {
+            font-family: "Arial Black", sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: inline-block;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #555;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+         <h1>𝐅𝐫𝐚𝐦𝐞𝐬 𝐎𝐟 𝐈𝐬𝐥𝐚𝐧𝐝</h1>
+        <h2>"An art cannot be searched by search bar"</h2>
+        <nav>
+            <a href="home.html"><button>Home</button></a>
+            <a href="shop.html"><button>Shop Now</button></a>
+            <a href="aboutus.html"><button>About Us</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+        </nav>
+    </header>
+
+    <div class="container contact-container">
+        <div class="contact-info">
+            <h2>Feel free to write, complain, and suggest improvements.</h2>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Planet number-3,Somewhere from the plantet earth far from the sun near the land,in search of Art</p>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <p>+91 9879879879</p>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                <p>info@framesofisland.com</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="serverside.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <a href="submission.html"><input type="submit" value="Send Message"></a>
+            </form>
+</form>
+
+        </div>
+    </div>
+
+    <div class="social-icons-container">
+        <h3>Follow us on</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/7203960991?text=Hello%20FramesOfIsland"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Artworks Store</p>
+    </footer>
+</body>
+
+</html>

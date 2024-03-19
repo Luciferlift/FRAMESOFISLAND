@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FramesOfIsland - Shop</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <style>
+
+
+        .shop-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .shop-item {
+            text-align: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .shop-item:hover {
+            transform: scale(1.05);
+        }
+
+        .shop-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .shop-item .price {
+            font-size: 1.2rem;
+            color: #ffcc00;
+            margin-top: 10px;
+        }
+
+        /* Cart styles */
+        .cart-icon {
+            margin-right: 20px;
+            font-size: ;
+        }
+
+        .cart-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+
+        .cart-item {
+            margin-bottom: 10px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .cart-buttons {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>𝐅𝐫𝐚𝐦𝐞𝐬 𝐎𝐟 𝐈𝐬𝐥𝐚𝐧𝐝</h1>
+        <h2>"An art cannot be searched by search bar"</h2>
+        <nav>
+            <a href="home.html"><button>Home</button></a>
+            <a href="shop.html"><button>Shop Now</button></a>
+            <a href="aboutus.html"><button>About Us</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+            <div class="cart-icon" onclick="toggleCart()">&#128722;</div> <!-- Cart Icon -->
+        </nav>
+    </header>
+
+    <div class="container shop-container">
+        <div class="shop-item" onclick="addToCart('Item 1', 50)">
+            <img src="images/s1.jpg" alt="Item 1">
+            <div class="price">$50</div>
+            <button class="add-to-cart-btn">Add to Cart</button> <!-- Add to Cart button -->
+        </div>
+        
+           <div class="shop-item" onclick="addToCart('Item 2', 60)">
+            <img src="IMAGES/s2.jpg" alt="Item 2">
+            <div class="price">$60</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 3', 70)">
+            <img src="IMAGES/s4.jpg" alt="Item 3">
+            <div class="price">$70</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <!-- Add more shop items as needed -->
+        <div class="shop-item" onclick="addToCart('Item 4', 80)">
+            <img src="IMAGES/s5.jpg" alt="Item 4">
+            <div class="price">$80</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 5', 90)">
+            <img src="IMAGES/s6.jpg" alt="Item 5">
+            <div class="price">$90</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 6', 100)">
+            <img src="IMAGES/s7.jpg" alt="Item 6">
+            <div class="price">$100</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 7', 110)">
+            <img src="IMAGES/s8.jpg" alt="Item 7">
+            <div class="price">$110</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 8', 120)">
+            <img src="IMAGES/s9.jpg" alt="Item 8">
+            <div class="price">$120</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 9', 130)">
+            <img src="IMAGES/s10.jpg" alt="Item 9">
+            <div class="price">$130</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 10', 140)">
+            <img src="IMAGES/s11.jpg" alt="Item 10">
+            <div class="price">$140</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 11', 150)">
+            <img src="images/s12.jpg" alt="Item 11">
+            <div class="price">$150</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 12', 160)">
+            <img src="images/s13.jpg" alt="Item 12">
+            <div class="price">$160</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 13', 170)">
+            <img src="images/s14.jpg" alt="Item 13">
+            <div class="price">$170</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 14', 180)">
+            <img src="images/s15.jpg" alt="Item 14">
+            <div class="price">$180</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="shop-item" onclick="addToCart('Item 15', 190)">
+            <img src="images/s16.jpg" alt="Item 15">
+            <div class="price">$190</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Container -->
+    <div class="cart-container" id="cartContainer">
+        <!-- Cart items will be displayed here -->
+        <div id="cartItems"></div>
+        <!-- Total Price -->
+        <div id="totalPrice">Total: $0</div>
+        <!-- Buttons -->
+        <div class="cart-buttons">
+            <button onclick="clearCart()">Clear Cart</button>
+            <a href="payment.html"><button onclick="redirectToPayment()">Checkout</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Artworks Store</p>
+    </footer>
+
+    <!-- JavaScript for Cart Functionality -->
+    <script>
+        function toggleCart() {
+            var cartContainer = document.getElementById("cartContainer");
+            cartContainer.style.display = cartContainer.style.display === "none" ? "block" : "none";
+        }
+
+        var cartItems = [];
+
+function addToCart(itemName, price) {
+    cartItems.push({ name: itemName, price: price });
+    updateCart();
+}
+
+// Rest of the JavaScript functions remain the same
+
+
+        function updateCart() {
+            var cartItemsDiv = document.getElementById("cartItems");
+            var totalPriceDiv = document.getElementById("totalPrice");
+            var totalPrice = 0;
+            cartItemsDiv.innerHTML = ""; // Clear previous items
+            cartItems.forEach(function (item) {
+                totalPrice += item.price;
+                var itemDiv = document.createElement("div");
+                itemDiv.classList.add("cart-item");
+                itemDiv.innerHTML = `
+                    <img src="images/s1.jpg" alt="${item.name}">
+                    ${item.name} - $${item.price}
+                    <button onclick="removeFromCart('${item.name}', ${item.price})">Remove</button>`;
+                cartItemsDiv.appendChild(itemDiv);
+            });
+            totalPriceDiv.textContent = "Total: $" + totalPrice;
+        }
+
+        function removeFromCart(itemName, price) {
+            cartItems = cartItems.filter(function (item) {
+                return item.name !== itemName || item.price !== price;
+            });
+            updateCart();
+        }
+
+        function clearCart() {
+            cartItems = [];
+            updateCart();
+        }
+
+        function checkout() {
+            window.location.href="payment.html"
+        }
+    </script>
+</body>
+
+</html>

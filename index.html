@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FramesOfIsland</title>
+    <link rel="stylesheet" type="text/css" href="CSS/login.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <h1>𝐅𝐫𝐚𝐦𝐞𝐬 𝐎𝐟 𝐈𝐬𝐥𝐚𝐧𝐝</h1>
+        <h2>"An art cannot be searched by search bar"</h2>
+        <nav>
+            <img src="images/0.png" alt="Logo" class="logo">
+            <a href="home.html"><button>Home</button></a>
+            <a href="shop.html"><button>Shop Now</button></a>
+            <a href="aboutus.html"><button>About Us</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="login-form" action="#" method="post" onsubmit="login(); return false;">
+            <h2>Login</h2>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Online Artworks Store</p>
+    </footer>
+
+     <script>
+        function login() {
+            // Get the entered username and password
+            var enteredUsername = document.getElementById("username").value;
+            var enteredPassword = document.getElementById("password").value;
+            
+            // Define the allowed username and password
+            var allowedUsername = "Parul123";
+            var allowedPassword = "123456";
+            
+            // Check if the entered username and password match the allowed credentials
+            if (enteredUsername === allowedUsername && enteredPassword === allowedPassword) {
+                // Redirect to index page if credentials are correct
+                window.location.href = "home.html";
+            } else {
+                // Display error message if credentials are incorrect
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

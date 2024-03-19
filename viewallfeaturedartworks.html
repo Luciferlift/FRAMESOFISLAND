@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Featured Artworks - FramesOfIsland</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2rem;
+        }
+        .container {
+            padding: 20px;
+        }
+
+        .featured-artworks {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .featured-artworks h2 {
+            margin-bottom: 20px;
+        }
+
+        .artwork {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .artwork img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .artwork img:hover {
+            transform: scale(1.05);
+        }
+
+        .artwork-description {
+            margin-top: 10px;
+        }
+
+        .artwork-description h3 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .artwork-description p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>𝐅𝐫𝐚𝐦𝐞𝐬 𝐎𝐟 𝐈𝐬𝐥𝐚𝐧𝐝</h1>
+        <h2>"An art cannot be searched by search bar"</h2>
+        <nav>
+            <a href="home.html"><button>Home</button></a>
+            <a href="shop.html"><button>Shop Now</button></a>
+            <a href="aboutus.html"><button>About Us</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="featured-artworks section">
+            <h2>Featured Artworks</h2>
+            <div class="artwork">
+                <div>
+                    <img src="images/vf1.jpg" alt="Featured Artwork 1">
+                    <div class="artwork-description">
+                        <h3>"The Pirates consipiracy~ daniel Ridcliff"</h3>
+                        <p>Description,Originally an art does not need a description,it itself describes everything but you have to bless the art with the artistic approach,here this art made by sir Daniel is about the ancient times how pirates use to break the rules and travels in the restricted area with ancient technicals ships.Coming soon for auction on 24-05-2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/vf2.jpg" alt="Featured Artwork 2">
+                    <div class="artwork-description">
+                        <h3>"Ai mixed art~Rithesh engineer"</h3>
+                        <p>This art is the presentation of ai image and hand made crafted painting,here the raw phootage was developed by Sir Ritesh and then given to air for perfection after that he himself made this image to exist in the world for pleasing the eyes of kids by hanging on the walls of productiveness</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/vf3.jpg" alt="Featured Artwork 3">
+                    <div class="artwork-description">
+                        <h3>"The Shaping flower~Richi newjones"</h3>
+                        <p>The art work made by group of people large enough to cover the wall of normal auditorium hall every single paint is painted by students and going to be shown in musem's next upcoming event of 2025(book your tickets from Summer)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Artworks Store</p>
+    </footer>
+</body>
+
+</html>

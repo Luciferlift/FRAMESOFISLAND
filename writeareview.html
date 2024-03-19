@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a Review - FramesOfIsland</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2rem;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .write-review-form {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .write-review-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .write-review-form input[type="text"],
+        .write-review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .write-review-form textarea {
+            height: 150px;
+        }
+
+        .write-review-form input[type="submit"] {
+            background-color: #ffcc00;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .write-review-form input[type="submit"]:hover {
+            background-color: #f0b90b;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+         <h1>𝐅𝐫𝐚𝐦𝐞𝐬 𝐎𝐟 𝐈𝐬𝐥𝐚𝐧𝐝</h1>
+        <h2>"An art cannot be searched by search bar"</h2>
+        <nav>
+            <a href="home.html"><button>Home</button></a>
+            <a href="shop.html"><button>Shop Now</button></a>
+            <a href="aboutus.html"><button>About Us</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="write-review-form">
+            <h2>Share Your Experience</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="review" placeholder="Write your review" required></textarea>
+                <a href="submission.html"><input type="submit" value="Submit Review"></a>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Artworks Store</p>
+    </footer>
+</body>
+
+</html>
