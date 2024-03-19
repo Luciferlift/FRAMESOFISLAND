@@ -236,3 +236,8 @@ button:hover {
     background-color: #ffcc00; /* Color on hover */
     transform: scale(1.05);
 }
+
+@media only screen and (max-width: 600px) {
+    /* CSS styles for mobile devices */
+}
+
